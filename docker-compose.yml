@@ -6,10 +6,13 @@ services:
     build:
       context: .
       dockerfile: Client/Dockerfile
+    ports:
+    - 9090:8080
 
   server:
     image: ${DOCKER_REGISTRY-}server
     build:
       context: .
       dockerfile: Server/Dockerfile
+
 
