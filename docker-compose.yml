@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Client/Dockerfile
     ports:
-    - 9090:8080
+    - 50009:80
 
   server:
     image: ${DOCKER_REGISTRY-}server
